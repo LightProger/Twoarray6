@@ -33,11 +33,11 @@ int main() {
    {
         if(i % 2 == 0)
 	    {
-             for( j = 0; j < col; j++) printf("%3d", array[i][j]);
+             for( j = 0; j < col; j++) { printf("%3d", array[i][j]); }
         }
-        if(i % 2 == 1)
+        else
 	    {
-            for(j = col - 1; j >= 0; j--) printf("%3d", array[i][j]);
+            for(j = col - 1; j >= 0; j--) { printf("%3d", array[i][j]); }
         }
     printf("\n");
    }
